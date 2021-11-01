@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: auto;
+    padding: 4em;
+    background-color: #eee;
+    text-align: center;
+    line-height: 5em;
+}
+
+header > h1,
+header > h2 {
+    margin: 0;
+}
+
+header > h1 {
+    font-size: 2.7em;
+}
+
+/* nav */
+nav {
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav > a {
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    transition: 0.3s;
+}
+
+nav > a:hover {
+    background-color: #EDA831;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, .4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    width: 80%;
+    border: 1px solid #888;
+    padding: 20px;
+    animation: modalTop .4s;
+}
+
+@keyframes modalTop {
+    from {top: -300px; opacity: 0;}
+    to {top: 0; opacity: 1;}
+}
+
+.close {
+    float: right;
+    color: #aaaaaa;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.box {
+    height: 1.5rem;
+}
+
+.title {
+    color: black;
+    background-color: #FEE0AE;
+    border-left: 8px solid #FCA311;
+    padding: 10px;
+    max-width: 25rem;
+}
+
+.anchor-container {
+    position: relative;
+}
+
+.anchor-container a {
+    position: absolute;
+    top: -100px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* accordion */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    transition: 0.4s;
+}
+
+.active-acc, 
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion::after {
+    content: "\002B";
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active-acc::after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s;
+}
+
+/* Tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active-tab {
+    background-color: #ccc;
+}
+
+.contentborder {
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* slide show */
+.slideshow-container {
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.numbertext {
+    position: absolute;
+    top: 0;
+    color: #f2f2f2;
+    padding: 8px 12px;
+}
+
+.text {
+    position: absolute;
+    bottom: 1em;
+    color: #f2f2f2;
+    padding: 8px 12px;
+    text-align: center;
+    width: 100%;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    font-size: 40px;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    transition: .6s;
+}
+
+.prev {
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    display: inline-block;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color .6s;
+}
+
+.dot:hover,
+.active-slide {
+    background-color: #717171;
+}
+
+.fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}

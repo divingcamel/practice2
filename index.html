@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+<header>
+    <h1>Practice makes perfect</h1>
+    <h2>Let's hope I can do it</h2>
+</header>
+<nav id="navbar">
+    <a href="#">Home</a>
+    <a href="javascript: void(0)" id="modal-btn">Open Modal</a>
+    <a href="#accordion">Accordion</a>
+    <a href="#tab">Tab</a>
+    <a href="#slide">Slide</a>
+</nav>
+<div class="modal" id="myModal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>跳出的訊息在此...</p>
+    </div>
+</div>
+<article class="content container">
+    <div class="box"></div>
+    <!-- Accordion -->
+    <section>
+        <div class="anchor-container">
+            <a id="accordion"></a>
+        </div>
+        <h2 class="title">Accordion</h2>
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+            <p>text in here...</p>
+        </div>
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+            <p>text in here...</p>
+        </div>
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+            <p>text in here...</p>
+        </div>
+    </section>
+    <div class="box"></div>
+    
+    <!-- Tab -->
+    <section>
+        <div class="anchor-container">
+            <a id="tab"></a>
+        </div>
+        <h2 class="title">Tab</h2>
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+            <button class="tablinks" onclick="openCity(event, 'Taipei')">Taipei</button>
+        </div>
+        <!-- Tab content -->
+        <div class="contentborder">
+            <div id="London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+            <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+            <div id="Tokyo" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+            <div id="Taipei" class="tabcontent">
+                <h3>Taipei</h3>
+                <p>Taipei is the capital of Taiwan.</p>
+            </div>
+        </div>
+    </section>
+    <div class="box"></div>
+    
+    <!-- Slide show -->
+    <section>
+        <div class="anchor-container">
+            <a id="slide"></a>
+        </div>
+        <h2 class="title">Slide show</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/slide-01.jpg" alt="lake">
+                <div class="text">Lake</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/slide-02.jpg" alt="road">
+                <div class="text">Road</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/slide-03.jpg" alt="city">
+                <div class="text">City</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="text-center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+    <div class="box"></div>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quo quibusdam enim rem. At ab commodi animi quaerat iste hic? Consectetur aliquid optio laborum modi corrupti, qui dolores dolorum ratione molestias suscipit ipsa tenetur atque et obcaecati deleniti, nam, doloremque dolor nostrum voluptates eius quidem. Sit ab quod reprehenderit, dolorum iste, in consequuntur dolore tempore minus voluptate aliquam aut optio ex repellendus animi officia neque. Eum doloribus alias pariatur dolor excepturi. Repellendus vitae, voluptatibus dolorem iste officiis dolorum eveniet sunt!</div>
+    <div>Eligendi consequuntur sunt eos laboriosam labore eius sapiente? Magnam in architecto rerum ut autem, quam sed obcaecati incidunt soluta culpa. Sed nulla nostrum sit officia corporis consequuntur, quos id ut incidunt! Laborum illum rem, perspiciatis distinctio illo optio dolore tempore fuga sapiente saepe eveniet? Ullam rem animi nostrum provident! Praesentium, cum eveniet, a voluptatem, placeat mollitia sit nulla ex dolorem inventore deserunt. Tenetur explicabo quas deserunt beatae quaerat, doloremque, facere dolor reiciendis modi corrupti distinctio minima dolorem hic dolores harum.</div>
+    <div>Nobis magni tempore eos sint omnis! Quasi, labore quaerat. Iste accusamus libero ullam necessitatibus odio qui eveniet consequatur, nobis aperiam veniam quis voluptates nostrum quibusdam dolores impedit, quaerat dolore consectetur, et ex animi! Accusantium, enim. Praesentium aspernatur temporibus aliquam tenetur. Nesciunt quibusdam tempore veritatis explicabo voluptatibus porro nam consequuntur odit adipisci dicta nihil laboriosam quos numquam consequatur corporis pariatur dolorem amet dignissimos quas, iure repellendus totam! Corporis praesentium, molestiae perspiciatis aliquid, reprehenderit eaque cum perferendis quisquam at, distinctio quasi quaerat?</div>
+    <div>Cumque non illo repudiandae minus maxime quae ducimus laborum rem. Excepturi provident obcaecati ab consequatur consectetur? Aut excepturi laudantium aliquid minima, rerum eius corporis, eaque nulla obcaecati repellendus ea magnam dicta molestias qui earum iure praesentium molestiae quos officia nemo doloribus animi suscipit dolores! Obcaecati, corporis sapiente non illum perspiciatis modi adipisci accusantium mollitia aperiam laboriosam possimus earum quaerat quibusdam a, aliquid beatae. Fugiat libero enim porro! Vel eveniet inventore excepturi praesentium, quaerat perspiciatis, voluptas repellendus porro eligendi perferendis assumenda?</div>
+    <div>Voluptate nisi nesciunt accusantium vitae maiores, laborum aut voluptatibus possimus exercitationem. Molestias earum enim necessitatibus soluta consequuntur commodi voluptates! Ducimus hic molestias at assumenda non! In consectetur natus recusandae possimus provident unde eum modi non, odio, veritatis cum eius aperiam ex. Quod autem labore nostrum! Atque repudiandae itaque sint sunt reiciendis quas porro aperiam ea non molestias laboriosam harum, nemo commodi adipisci a labore cupiditate enim, dolorem voluptates. Eos ad laborum ducimus adipisci distinctio voluptatum itaque iste, non facere? Nesciunt?</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem voluptatem, repellat labore, odit veritatis facilis cum, consequuntur ex cumque maxime quos fugiat unde. Ab, sapiente?</div>
+    <div>Facere, voluptas? Vitae asperiores, doloribus quasi deserunt delectus autem at omnis cum atque officia. Laboriosam ipsum minus officia impedit, sit illum nam placeat provident tempora.</div>
+    <div>Voluptatum atque est tenetur, totam illo inventore dolorum exercitationem, possimus fuga ratione aut placeat blanditiis, rerum consequatur error velit fugiat ipsam dolore odio enim! Earum?</div>
+    <div>Numquam, rerum fugit quo voluptas possimus ut repellendus maiores dignissimos laborum, cupiditate, quas hic exercitationem in enim reiciendis labore soluta at non veniam eos? Cupiditate?</div>
+    <div>Iusto, molestias eaque. Facilis amet et vitae unde, facere accusamus voluptatum eius a dignissimos, officia veniam tempora neque recusandae eum! Harum inventore necessitatibus laboriosam quam!</div>
+</article>
+
+<script src="practice.js"></script>
+</body>
+</html>
